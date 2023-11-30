@@ -1,0 +1,30 @@
+<div class="admin__page-section-title">
+    <span class="title">Send an SMS</span>
+</div>
+<div class="admin__page-section-item">
+    <div id="order_sms">
+        <div class="admin__field">
+            <label for="sms_phone" class="admin__field-label"><?= $block->escapeHtml(__('Phone number')) ?></label>
+            <div class="admin__field-control">
+                <select name="sms[phone]" id="sms_phone" class="admin__control-select">
+                    <?php foreach ($block->getPhones() as $_code => $_label): ?>
+                        <option value="<?= $block->escapeHtmlAttr($_code) ?>">
+                            <?= $block->escapeHtml($_label) ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+        </div>
+
+        <div class="admin__field">
+            <label for="sms_message" class="admin__field-label">
+                <?= $block->escapeHtml(__('Message')) ?>
+            </label>
+            <div class="admin__field-control">
+                <textarea name="sms[message]" rows="3" cols="5" id="sms_message" class="admin__control-textarea sms-char-count"></textarea>
+            </div>
+        </div>
+        <br />
+        <?= $block->getChildHtml('submit_button') ?>
+    </div>
+</div>

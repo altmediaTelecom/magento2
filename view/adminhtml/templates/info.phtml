@@ -1,0 +1,38 @@
+<p>
+    To use this plugin for Magento2, it's necessary to input your ALTMEDIA login details on the <a href="<?= $this->getUrl('adminhtml/system_config/edit/section/altmedia') ?>">configuration</a> page.
+</p>
+<br/>
+<p>
+    For those without an account, please reach out to our team <a href="https://www.altmedia-telecom.ro/contacts/" target="_blank">here</a>.
+</p>
+<br />
+<p>
+    On the settings page, look for the credentials section, where there's a dedicated field corresponding to each
+    Magento2 order status.
+</p>
+<p>
+    For each order status, specify a message that will be sent via SMS.
+</p>
+<p>
+    The messages can include variables that will automatically be filled with the relevant order details.
+</p>
+<br/>
+<p>
+    Below you can
+    find examples of messages for different statuses, incorporating variables for personalized communication:
+</p>
+<p>
+    Order Shipped Status:
+    "Hello {billing_first_name}, great news! Your order {order_number} has been shipped. Track its progress here:
+    {tracking_url}."
+</p>
+<p>
+    Order Payment Received Status:
+    "Dear {billing_first_name}, we have received your payment for order {order_number}. Your items will be dispatched
+    soon!"
+</p>
+<p>
+    Order Cancelled Status:
+    "Hi {billing_first_name}, we're sorry to inform you that your order {order_number} has been cancelled. For details,
+    please contact us.”
+</p>

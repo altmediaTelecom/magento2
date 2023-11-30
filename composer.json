@@ -1,0 +1,24 @@
+{
+  "name": "altmedia/sms",
+  "description": "Magento 2 SMS order notifications",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Altmedia\\Sms\\":""
+    }
+  },
+  "repositories": {
+    "altmedia-sms-magento": {
+      "type": "git",
+      "url": "git@github.com:altmediaTelecom/magento2.git"
+    }
+  }
+}

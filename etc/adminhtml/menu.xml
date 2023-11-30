@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Altmedia_Sms::main" title="Altmedia Sms" module="Altmedia_Sms" sortOrder="51" resource="Altmedia_Sms::main"/>
+        <add id="Altmedia_Sms::info" title="Info" module="Altmedia_Sms" sortOrder="10" action="sms/info" resource="Altmedia_Sms::info" parent="Altmedia_Sms::main"/>
+        <add id="Altmedia_Sms::history" title="Sent Messages" module="Altmedia_Sms" sortOrder="10" action="sms/history" resource="Altmedia_Sms::history" parent="Altmedia_Sms::main"/>
+        <add id="Altmedia_Sms::test" title="Send Test SMS" module="Altmedia_Sms" sortOrder="10" action="sms/test" resource="Altmedia_Sms::test" parent="Altmedia_Sms::main"/>
+    </menu>
+</config>

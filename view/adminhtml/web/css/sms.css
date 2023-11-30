@@ -1,0 +1,8 @@
+.sms-button {
+    float: right;
+    margin: 0.5em;
+}
+
+.sms-button>span {
+    font-size: 1.25em;
+}
