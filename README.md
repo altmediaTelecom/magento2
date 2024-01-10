@@ -4,6 +4,25 @@
 
 * Magento Community 2.2.0-2.4.x (CE, EE, ECE, B2B)
 
+
+## Install
+
+```shell
+composer require altmedia/sms
+```
+
+```shell
+php bin/magento module:enable Altmedia_Sms
+```
+
+```shell
+php bin/magento setup:upgrade
+```
+
+```shell
+php bin/magento setup:di:compile
+```
+
 ## Benefits
 
 * Easy to use
